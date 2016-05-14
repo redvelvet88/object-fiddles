@@ -1,108 +1,158 @@
-//Once you complete a problem, open up Chrome and check the answer in the console.
+// //Once you complete a problem, open up Chrome and check the answer in the console.
 
 
-//Create an object called me. Give it a key of name with the value being your name, and another key of age with the value being your age. Then alert your name using dot notation.
+// //Create an object called me. Give it a key of name with the value being your name, and another key of age with the value being your age. Then alert your name using dot notation.
 
-  //Code here
+//   //Code here
+// var me = {
+//   name: "Abbey",
+//   age: "27"
+// };
+// alert(me.name);
 
 
+// //NEXT PROBLEM
 
 
-//NEXT PROBLEM
 
 
+// //Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. Have the values to those keys be your favorite thing in that category.
 
+//   //Code here
+//   var favoriteThings = {
+//     band: "Judah & the Lion",
+//     food: "french fries",
+//     person: "Mom",
+//     book: "Amelia Bedilia",
+//     movie: "A Knight's Tale",
+//     holiday: "Valentine's Day",
+    
+//   };
+  
 
-//Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. Have the values to those keys be your favorite thing in that category.
 
-  //Code here
+// //After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 
+//   //Code here
 
-//After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
+// favoriteThings.car = "Elantra";
+// favoriteThings.brand = "Hyundai";
 
-  //Code here
+// //Now change the food key in your favoriteThings object to be 'Lettuce' and change the book key in your favoriteThings object to be '50 Shades of Gray'.
 
+//   //Code here
 
-//Now change the food key in your favoriteThings object to be 'Lettuce' and change the book key in your favoriteThings object to be '50 Shades of Gray'.
+// favoriteThings.food = "Lettuce";
+// favoriteThings.book = "50 Shades of Gray";
 
-  //Code here
 
 
+// //NEXT PROBLEM
 
 
-//NEXT PROBLEM
 
+// /*Create an empty Object called backPack. Now, create a variable called 'item'
+// and set it equal to the string 'firstPocket'. Using bracket notation,
+// add a 'firstPocket' key (or property) to backPack, using 'item'.
+// Set the value of that key to 'chapstick'.
 
+// Using dot notation, add another key (or property) to your backPack object
+// that is named color, with the value being the color of your backpack. */
 
-/*Create an empty Object called backPack. Now, create a variable called 'item'
-and set it equal to the string 'firstPocket'. Using bracket notation,
-add a 'firstPocket' key (or property) to backPack, using 'item'.
-Set the value of that key to 'chapstick'.
+//   //Code here
+// var backPack = {};
 
-Using dot notation, add another key (or property) to your backPack object
-that is named color, with the value being the color of your backpack. */
+// var item = "firstPocket";
+// backPack[item] = "chapstick";
+// backPack.color = "red";
+  
 
-  //Code here
+// //After you do the above, alert your entire backPack object.
 
-//After you do the above, alert your entire backPack object.
+//   //Code here
+// alert(backPack);
+// /*You probably noticed that it just alerted [object Object].
+// Alerting to see the data in your Object doesn't work so well.
+// Instead, console.log your whole backPack object and then check out the console. */
 
-  //Code here
+//   //Code here
+// console.log(backPack);
 
-/*You probably noticed that it just alerted [object Object].
-Alerting to see the data in your Object doesn't work so well.
-Instead, console.log your whole backPack object and then check out the console. */
 
-  //Code here
 
+// //NEXT PROBLEM
 
 
 
-//NEXT PROBLEM
 
+// //Create an 'alsoMe' object with the following properties name, age, height, gender, married, eyeColor, hairColor. Fill those properties in with the appropriate values.
 
+//   //Code Here
+// var alsoMe = {
+//   name: "Abbey",
+//   age: "27",
+//   height: "5ft7.5in",
+//   gender: "female",
+//   married: "single",
+//   eyeColor: "hazel",
+//   hairColor: "dirty blonde",
+  
+// };
+// //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
+//   //Code Here
+// for(value in alsoMe)
+// alert(alsoMe[value]);
 
-//Create an 'alsoMe' object with the following properties name, age, height, gender, married, eyeColor, hairColor. Fill those properties in with the appropriate values.
 
-  //Code Here
 
-//Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
+// //NEXT PROBLEM
 
-  //Code Here
 
 
 
+// //Create an Object called 'album' with 5 keys named different song titles that you make up, with the values being the length of each song.
 
-//NEXT PROBLEM
+//   //Code Here
+// var album = {
+//   Song1: "1:00",
+//   Song2: "2:00",
+//   Song3: "3:00",
+//   Song4: "4:00",
+//   Song5: "5:00"
+  
+// };
+// //Now, loop through your album object alerting every song title individually.
 
+//   //Code Here
+// for(key in album)
+// alert(key);
 
 
 
-//Create an Object called 'album' with 5 keys named different song titles that you make up, with the values being the length of each song.
+// //NEXT PROBLEM
 
-  //Code Here
 
-//Now, loop through your album object alerting every song title individually.
 
-  //Code Here
 
+// //Create an object called states that has 5 US states as properties with the values being their population (doesn't have to be accurate).
 
+//   //Code Here
+// var states = {
+//   Utah: 500000,
+//   Colorado: 600000,
+//   Idaho: 300000,
+//   Arizona: 400000,
+//   NewMexico: 700000
+// };
+// //Now, loop through your states object and if the states population is greater than 30K, alert that state.
 
-
-//NEXT PROBLEM
-
-
-
-
-//Create an object called states that has 5 US states as properties with the values being their population (doesn't have to be accurate).
-
-  //Code Here
-
-//Now, loop through your states object and if the states population is greater than 30K, alert that state.
-
-  //Code Here
-
-
+//   //Code Here
+// for(var statePop in states) {
+// if (states[statePop] > 30000) {
+//   alert(statePop);
+// }
+// }
 
 
 //NEXT PROBLEM
@@ -122,10 +172,16 @@ var user1 = {
 that each value is truthy. If it's not truthy, remove it from the object. */
 
   //Code Here
-
+for(var object in user1) {
+if(!user1[object]) {
+  delete(user1[object])
+}
+}
 //Once you get your truthy Object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
 
   //Code Here
+user1.name = "Abbey Rollins";
+user1.username = "abbeyrollins";
 
 
 
@@ -150,11 +206,12 @@ var user2 = {
 // name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
 
   //Code Here
-
+user2.name = "Tyler S. McGinnis";
+user2.email = "tyler.micginnis@devmounta.in";
 //Now call the sayName method that's on the user object which will alert the users email
 
   //Code Here
-
+user2.sayName();
 
 
 
