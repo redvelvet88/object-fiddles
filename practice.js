@@ -60,17 +60,17 @@
 // that is named color, with the value being the color of your backpack. */
 
 //   //Code here
-// var backPack = {};
+var backPack = {};
 
-// var item = "firstPocket";
-// backPack[item] = "chapstick";
-// backPack.color = "red";
+var item = "firstPocket";
+backPack[item] = "chapstick";
+backPack.color = "red";
   
 
 // //After you do the above, alert your entire backPack object.
 
 //   //Code here
-// alert(backPack);
+alert(backPack);
 // /*You probably noticed that it just alerted [object Object].
 // Alerting to see the data in your Object doesn't work so well.
 // Instead, console.log your whole backPack object and then check out the console. */
@@ -88,22 +88,22 @@
 // //Create an 'alsoMe' object with the following properties name, age, height, gender, married, eyeColor, hairColor. Fill those properties in with the appropriate values.
 
 //   //Code Here
-// var alsoMe = {
-//   name: "Abbey",
-//   age: "27",
-//   height: "5ft7.5in",
-//   gender: "female",
-//   married: "single",
-//   eyeColor: "hazel",
-//   hairColor: "dirty blonde",
+var alsoMe = {
+  name: "Abbey",
+  age: "27",
+  height: "5ft7.5in",
+  gender: "female",
+  married: false,
+  eyeColor: "hazel",
+  hairColor: "dirty blonde"
   
-// };
+};
 // //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
 //   //Code Here
-// for(value in alsoMe)
-// alert(alsoMe[value]);
-
+for(value in alsoMe) {
+alert(alsoMe[value]);
+};
 
 
 // //NEXT PROBLEM
@@ -125,8 +125,9 @@
 // //Now, loop through your album object alerting every song title individually.
 
 //   //Code Here
-// for(key in album)
+// for(var key in album) {
 // alert(key);
+};
 
 
 
@@ -176,7 +177,7 @@ for(var object in user1) {
 if(!user1[object]) {
   delete(user1[object])
 }
-}
+};
 //Once you get your truthy Object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
 
   //Code Here
@@ -223,17 +224,20 @@ user2.sayName();
 //Create an empty object called methodCollection.
 
   //Code Here
-
+methodCollection = {};
 /*Now add two methods (functions that are properties on objects) to your methodCollection
 object. One called 'alertHello' which alerts 'hello' and another method called logHello
  which logs 'hello' to the console. */
 
   //Code Here
-
+methodCollection.alertHello = function () {
+  alert("hello");
+};
 //Now call your alertHello and logHello methods.
 
   //Code Here
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 //NEXT PROBLEM
@@ -243,8 +247,14 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 // Create a function called MakePerson which takes in name, birthday, ssn as its parameters and returns a new object with all of the information that you passed in.
 
   //Code Here
-
-
+function MakePerson (name, birthday, ssn) {
+  return {
+    name: "name",
+    birthday: "birthday",
+    ssn: "ssn" 
+  }
+};
+var newObject = MakePerson();
 
 //NEXT PROBLEM
 
@@ -253,7 +263,13 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 // Create a function called MakeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object and returns that object so that whenever you invoke MakeCard, you get a brand new credit card.
 
   //Code Here
-
+var MakeCard = function (cardNumber, expirationDate, securityCode) {
+  return {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  }
+};
 
 
 //NEXT PROBLEM
@@ -262,7 +278,15 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
 /* As of this point you should have a MakePerson and a MakeCard function which returns you either a person or a credit card object.
    Now, create a bindCard function that takes in a person object as its first parameter and a creditcard object as its second parameter.
-   Have bindCard merge the two parameters together into a new object which contains all the properties from the person as well as the creditcard. While Object.assign would give you the answer, specRunner requires an answer without using it.
+   Have bindCard merge the two parameters together into a new object which contains all the properties from the person as well as the creditcard. 
+   While Object.assign would give you the answer, specRunner requires an answer without using it.
 */
 
   //Code Here
+var bindCard = function (person, creditcard) {
+  var paymentMethod = person;
+  for (var prop in creditcard) {
+    paymentMethod[prop] = creditcard[prop];
+  };
+  return paymentMethod;
+};
